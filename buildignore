@@ -1,0 +1,6 @@
+/buildignore
+/build.sh
+/build
+.git/
+.git*
+.DS_Store
