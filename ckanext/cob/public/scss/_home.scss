@@ -1,0 +1,22 @@
+@media screen and (min-width: 768px) {
+    .hero {
+        background: url('//bloomington.in.gov/alpha/themes/cob/images/home-photo1@1x.jpg') no-repeat $cob-gray-light 50% 50%;
+        background-size: cover;
+    }
+}
+.homepage {
+    .module-search {
+        .module-content {
+            background-color: $cob-blue;
+            .heading {
+                color: #fff;
+            }
+        }
+        .tags {
+            background-color: $cob-blue-dark;
+            h3 {
+                color: #fff;
+            }
+        }
+    }
+}

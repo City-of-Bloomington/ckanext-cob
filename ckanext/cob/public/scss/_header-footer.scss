@@ -1,0 +1,47 @@
+body {
+    background-color: $cob-gray-light;
+}
+.fn1-siteHeader {
+    // Improves compatibility with CKAN's grid system
+    margin-right: -20px;
+    margin-left: -20px;
+    &-container {
+        // This helps to make the siteHeader more consistent with CKAN's layout.
+        max-width: 940px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+.account-masthead {
+    background-color: $cob-blue-dark;
+}
+.masthead {
+    background-color: $cob-blue;
+
+    .navigation {
+        .nav-pills {
+            li {
+                a {
+                    transition: background-color .25s ease-in-out;
+                    &:hover {
+                        background-color: $cob-blue-light;
+                    }
+                }
+                &.active {
+                    a {
+                        background-color: $cob-blue-dark;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: $viewport-medium) {
+    .main,
+    [role=main] {
+        background-color: $cob-gray-light;
+    }
+}
+.site-footer {
+    background-color: $cob-nightshade;
+}
