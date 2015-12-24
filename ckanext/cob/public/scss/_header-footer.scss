@@ -7,9 +7,12 @@ body {
     margin-left: -20px;
     &-container {
         // This helps to make the siteHeader more consistent with CKAN's layout.
-        max-width: 940px;
-        padding-right: 0;
-        padding-left: 0;
+        @media screen and (min-width: 768px) {
+            max-width: 768px;
+        }
+        @media screen and (min-width: 980px) {
+            max-width: 980px;
+        }
     }
 }
 .account-masthead {
