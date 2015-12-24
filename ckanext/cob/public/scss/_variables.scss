@@ -39,7 +39,7 @@ $viewport-large: (990rem / 16);
 $viewport-medium: (600rem / 16);
 $viewport-small: (350rem / 16);
 
-$layoutMaxWidth: (1160rem/16);
+$layoutMaxWidth: (1160rem / 16);
 
 // Mixins
 
@@ -56,8 +56,8 @@ $layoutMaxWidth: (1160rem/16);
     display: block;
     float: right;
     font-family: $font-headings;
-    font-size: (20rem/16);
-    padding-left: (20rem/16);
+    font-size: (20rem / 16);
+    padding-left: (20rem / 16);
     position: relative;
     text-transform: uppercase;
 
@@ -65,12 +65,12 @@ $layoutMaxWidth: (1160rem/16);
         background: url('../images/forward-arrow.svg') no-repeat 0 50%;
         content: ' ';
         display: block;
-        height: (19rem/16);
-        margin-top: (-8rem/16);
+        height: (19rem / 16);
+        margin-top: (-8rem / 16);
         position: absolute;
             left: 0;
             top: 50%;
-        width: (16rem/16);
+        width: (16rem / 16);
     }
 }
 

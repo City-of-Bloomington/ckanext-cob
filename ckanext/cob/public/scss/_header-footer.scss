@@ -15,6 +15,11 @@ body {
         }
     }
 }
+.fn1-siteLogo + .logo {
+    border-left: (1rem / 16) solid $cob-gray;
+    margin-left: 1rem;
+    padding-left: 1rem;
+}
 .account-masthead {
     background-color: $cob-blue-dark;
 }
