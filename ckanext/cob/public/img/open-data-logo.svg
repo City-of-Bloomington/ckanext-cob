@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
-<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="43" width="220" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 220 43">
+<svg id="svg2" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="36" width="181" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 181 36">
  <metadata id="metadata7">
   <rdf:RDF>
    <cc:Work rdf:about="">
@@ -10,8 +10,8 @@
    </cc:Work>
   </rdf:RDF>
  </metadata>
- <g id="layer1" transform="translate(0 -1009.4)" fill="#315da6">
-  <path id="path4177" d="m21.438 0.125a21.438 21.438 0 0 0 -21.438 21.437 21.438 21.438 0 0 0 21.438 21.438 21.438 21.438 0 0 0 11.148 -3.15l-7.086-7.086c-2.644 1.124-5.232 1.193-6.723 0.646-5.452-2-8.387-6.332-8.222-11.398l8.326 4.636c1.887 1.051 4.247 0.389 5.291-1.486l2.305-4.139c1.044-1.874 0.365-4.23-1.522-5.281l-8.529-4.752c1.39-0.754 2.949-1.0632 4.695-1.0408 2.481 0.0319 5.328 0.7068 8.57 1.6248 4.427 1.254 6.089 6.785 3.041 13.809-0.055 0.129-0.121 0.242-0.179 0.367l7.086 7.088a21.438 21.438 0 0 0 3.236 -11.276 21.438 21.438 0 0 0 -21.437 -21.437z" transform="translate(0 1009.4)"/>
-  <text id="text6157" style="word-spacing:0px;letter-spacing:0px" font-weight="bold" xml:space="preserve" transform="scale(.92017 1.0868)" line-height="125%" font-size="19.759px" y="958.3656" x="52.687332" font-family="Lato"><tspan id="tspan6159" font-weight="900" y="958.3656" x="52.687332" font-family="Lato" fill="#315da6"><tspan id="tspan4172" font-size="25.925px">OpenData</tspan><tspan id="tspan4168" fill="#447aa8">Btown</tspan></tspan></text>
+ <g id="layer1" transform="translate(0 -1016.4)">
+  <path id="path4177" fill="#315da6" d="m17.938 1016.5a17.938 17.938 0 0 0 -17.938 17.9 17.938 17.938 0 0 0 17.938 17.938 17.938 17.938 0 0 0 9.3283 -2.6361l-5.929-5.929c-2.2127 0.9406-4.3782 0.9982-5.6251 0.5409-4.5625-1.6737-7.0182-5.2984-6.8802-9.5374l6.9668 3.8797c1.5791 0.8794 3.5536 0.3249 4.4272-1.2437l1.9284-3.4629c0.87356-1.5687 0.30602-3.5397-1.2731-4.419l-7.1368-3.9762c1.1629-0.6311 2.4678-0.8898 3.9287-0.8711 2.0758 0.027 4.4583 0.5915 7.1711 1.3598 3.7035 1.0488 5.095 5.6767 2.5445 11.554-0.04675 0.1078-0.10168 0.2025-0.15035 0.3074l5.929 5.9306a17.938 17.938 0 0 0 2.7079 -9.4345 17.938 17.938 0 0 0 -17.938 -17.938z"/>
+  <text id="text4247" style="word-spacing:0px;letter-spacing:0px" xml:space="preserve" font-size="21.126px" y="1042.4377" x="42.118217" font-family="sans-serif" line-height="125%" fill="#447aa8"><tspan id="tspan4249" font-size="20px" y="1042.4377" x="42.118217" font-family="Lato"><tspan id="tspan4253" font-weight="600" fill="#315da6">OpenData</tspan><tspan id="tspan4251" font-weight="bold" font-size="14.812px" fill="#447aa8">Btown</tspan></tspan></text>
  </g>
 </svg>
