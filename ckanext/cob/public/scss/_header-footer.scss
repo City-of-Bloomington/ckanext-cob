@@ -1,55 +1,57 @@
 body {
-    background-color: $cob-gray-light;
+  background-color: $cob-gray-light;
 }
 .fn1-siteHeader {
+  @media screen and (max-width: 768px) {
     // Improves compatibility with CKAN's grid system
     margin-right: -20px;
     margin-left: -20px;
-    &-container {
-        // This helps to make the siteHeader more consistent with CKAN's layout.
-        @media screen and (min-width: 768px) {
-            max-width: 768px;
-        }
-        @media screen and (min-width: 980px) {
-            max-width: 980px;
-        }
+  }
+  &-container {
+    // This helps to make the siteHeader more consistent with CKAN's layout.
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
     }
+    @media screen and (min-width: 980px) {
+      max-width: 980px;
+    }
+  }
 }
 .fn1-siteLogo + .logo {
-    border-left: (1rem / 16) solid $cob-gray;
-    margin-left: 1rem;
-    padding-left: 1rem;
+  border-left: (1rem / 16) solid $cob-gray;
+  margin-left: 1rem;
+  padding-left: 1rem;
 }
 .account-masthead {
-    background-color: $cob-blue-dark;
+  background-color: $cob-blue-dark;
 }
 .masthead {
-    background-color: $cob-blue;
+  background-color: $cob-blue;
 
-    .navigation {
-        .nav-pills {
-            li {
-                a {
-                    transition: background-color .25s ease-in-out;
-                    &:hover {
-                        background-color: $cob-blue-light;
-                    }
-                }
-                &.active {
-                    a {
-                        background-color: $cob-blue-dark;
-                    }
-                }
-            }
+  .navigation {
+    .nav-pills {
+      li {
+        a {
+          transition: background-color .25s ease-in-out;
+          &:hover {
+            background-color: $cob-blue-light;
+          }
         }
+        &.active {
+          a {
+            background-color: $cob-blue-dark;
+          }
+        }
+      }
     }
+  }
 }
 @media screen and (min-width: $viewport-medium) {
-    .main,
-    [role=main] {
-        background-color: $cob-gray-light;
-    }
+  .main,
+  [role=main] {
+    background-color: $cob-gray-light;
+  }
 }
 .site-footer {
-    background-color: $cob-nightshade;
+  background-color: $cob-nightshade;
 }
