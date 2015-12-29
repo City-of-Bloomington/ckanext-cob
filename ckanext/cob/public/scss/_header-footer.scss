@@ -54,11 +54,10 @@ body {
 [role=main] {
   min-height: inherit;
   @media screen and (min-width: $viewport-medium) {
-    .main,
-    [role=main] {
-      background-color: $cob-gray-light;
-      min-height: 350px;
-    }
+//    background-color: $cob-gray-light;
+  }
+  @media screen and (min-width: 768px) {
+    min-height: 350px;
   }
 }
 .site-footer {
