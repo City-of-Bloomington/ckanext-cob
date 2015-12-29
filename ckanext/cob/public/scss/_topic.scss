@@ -1,0 +1,21 @@
+.odb-topic {
+  &-image {
+
+  }
+  &-list {
+
+  }
+  &-link {
+    display: inline-block;
+    text-align: center;
+    width: (115rem/16);
+    vertical-align: top;
+  }
+  &-title {
+    display: block;
+  }
+  &-row {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
