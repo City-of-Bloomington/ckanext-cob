@@ -46,10 +46,19 @@ body {
     }
   }
 }
-@media screen and (min-width: $viewport-medium) {
-  .main,
-  [role=main] {
-    background-color: $cob-gray-light;
+.masthead .btn-navbar, .masthead .btn-navbar:hover, .masthead .btn-navbar:focus, .masthead .btn-navbar:active, .masthead .btn-navbar.active, .masthead .btn-navbar.disabled, .masthead .btn-navbar[disabled] {
+  background-color: $cob-blue-dark;
+  border: 1px solid $cob-blue-darkest;
+}
+.main,
+[role=main] {
+  min-height: inherit;
+  @media screen and (min-width: $viewport-medium) {
+    .main,
+    [role=main] {
+      background-color: $cob-gray-light;
+      min-height: 350px;
+    }
   }
 }
 .site-footer {
