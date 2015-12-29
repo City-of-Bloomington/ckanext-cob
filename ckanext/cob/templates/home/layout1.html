@@ -24,7 +24,7 @@
             <h1 class="browse-heading">Browse by Topic</h1>
             <div class="odb-topic-list">
                 {%- for topic in h.cob_theme_groups() %}
-                  <a href="/group/{{ topic.name }}" class="odb-topic-link">
+                  <a href="/data/group/{{ topic.name }}" class="odb-topic-link">
                     <img class="odb-topic-image" src="{{ topic.image_display_url or '/img/icons-document.svg' }}">
                     <div class="browse-topic-title">
                       {{ topic.display_name }}
