@@ -1,8 +1,25 @@
-@media screen and (min-width: 768px) {
-    .hero {
-        background: url('//bloomington.in.gov/alpha/themes/cob/images/home-photo1@1x.jpg') no-repeat $cob-gray-light 50% 50%;
-        background-size: cover;
+.hero {
+  background: url('//bloomington.in.gov/alpha/themes/cob/images/home-photo1@1x.jpg') no-repeat $cob-gray-light 50% 50%;
+  background-size: cover;
+  color: #fff;
+  padding: 2rem 0;
+
+  .container {
+    background: rgba(0, 0, 0, .4);
+    padding-bottom: 2rem;
+  }
+  h1 {
+  color: #fff;
+  }
+  @media screen and (min-width: 768px) {
+    h1 {
+      font-size: (36rem/16);
     }
+    p {
+      font-size: (16rem/16);
+      margin: 0 2.5rem;
+    }
+  }
 }
 .homepage {
     .module-search {
@@ -18,6 +35,11 @@
                 color: #fff;
             }
         }
+    }
+    @media screen and (min-width: 768px) {
+      [role="main"] {
+        padding-top: 0;
+      }
     }
 }
 .odb-featured {
@@ -74,8 +96,14 @@
   @media screen and (min-width: 768px) {
     &-link {
       float: left;
-      padding: 1rem 2rem;
-      width: 50%;
+      padding: 1rem 1rem;
+      width: 25%;
     }
+  }
+}
+.odb-main-dark {
+  background-color: $cob-gray-dark;
+  h1 {
+    color: #fff;
   }
 }

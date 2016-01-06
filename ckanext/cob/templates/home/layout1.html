@@ -1,11 +1,22 @@
 <div role="main">
-  <div class="container">
-    <div class="row">
-      <div class="span12 col1 text-center">
-        <h1>Opening the doors of City Hall</h1>
-        <p>Welcome to the City of Bloomington&rsquo;s open data portal. This is envisioned as a place where citizens can become informed about their city government.</p>
+  <div class="hero">
+    <div class="container ">
+      <div class="row">
+        <div class="span12 col1 text-center">
+          <h1>Opening the doors of City Hall</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span6 col1 text-center">
+          <p>Welcome to the City of Bloomington&rsquo;s open data portal. This is envisioned as a place where citizens can become informed about their city government.</p>
+        </div>
+        <div class="span6 col2 text-center">
+          <a href="https://docs.google.com/a/bloomington.in.gov/forms/d/1hovzNIwkegke9LH7rOMsm4dcbRpf1CyHgD4ev8bUN4Y/viewform" class="fn1-btn-featuredAction">Suggest a dataset</a>
+        </div>
       </div>
     </div>
+  </div>
+  <div class="container">
     <div class="row">
       <div class="span12 col1">
         <div class="odb-featured">
@@ -19,19 +30,8 @@
             <div class="odb-featured-title">Energy Dashboard</div>
           </a>
           <a href="http://raidsonline.com/?address=Bloomington,IN" class="odb-featured-link odb-crime">
-            <div class="odb-featured-title">Map of Reported Crimes</div>
+            <div class="odb-featured-title">Crime Map</div>
           </a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="module-content-box text-center">
-        <div class="span12 col1">
-          <h1>What data would you like to see?</h1>
-          <a href="https://docs.google.com/a/bloomington.in.gov/forms/d/1hovzNIwkegke9LH7rOMsm4dcbRpf1CyHgD4ev8bUN4Y/viewform" class="fn1-btn-featuredAction">Suggest a dataset</a>
         </div>
       </div>
     </div>
@@ -57,7 +57,7 @@
     </div>
   </div>
 </div>
-<div role="main" class="hero">
+<div role="main">
   <div class="container">
     <div class="row row1">
       {#
@@ -75,26 +75,7 @@
     </div>
   </div>
 </div>
-<div role="main">
-  <div class="container">
-    <div class="row row2">
-      <div class="span6 col1">
-        {# Note: this featured_group block is used as an example in the theming
-           tutorial in the docs! If you change this code, be sure to check
-           whether you need to update the docs. #}
-        {# Start template block example. #}
-        {% block featured_group %}
-          {% snippet 'home/snippets/featured_group.html' %}
-        {% endblock %}
-        {# End template block example. #}
-      </div>
-      <div class="span6 col2">
-        {% block featured_organization %}
-          {% snippet 'home/snippets/featured_organization.html' %}
-        {% endblock %}
-      </div>
-    </div>
-  </div>
+<div role="main" class="odb-main-dark">
   <div class="container">
     <div class="row">
       <div class="module-content-box text-center">
