@@ -20,3 +20,52 @@
         }
     }
 }
+.odb-featured {
+  &-link {
+    box-sizing: border-box;
+    display: block;
+    padding: 1rem;
+    &:hover {
+      text-decoration: none;
+    }
+    &:before {
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      content: '';
+      display: block;
+      height: 10rem;
+      width: 100%;
+    }
+    &.odb-buses {
+      &:before {
+        background-image: url('../img/buses.jpg');
+      }
+    }
+    &.odb-budget {
+      &:before {
+        background-image: url('../img/budget.jpg');
+      }
+    }
+    &.odb-dashboard {
+      &:before {
+        background-image: url('../img/energy-dashboard.jpg');
+      }
+    }
+    &.odb-crime {
+      &:before {
+        background-image: url('../img/crime.jpg');
+      }
+    }
+  }
+  &-title {
+    background: #fff;
+  }
+  @media screen and (min-width: 768px) {
+    &-link {
+      float: left;
+      padding: 1rem 2rem;
+      width: 50%;
+    }
+  }
+}
