@@ -24,9 +24,11 @@ body {
 }
 .account-masthead {
   background-color: $cob-blue-dark;
+  background-image: none;
 }
 .masthead {
   background-color: $cob-blue;
+  background-image: none;
 
   .navigation {
     .nav-pills {
@@ -52,6 +54,7 @@ body {
 }
 .main,
 [role=main] {
+  background-image: none;
   min-height: inherit;
   @media screen and (min-width: $viewport-medium) {
 //    background-color: $cob-gray-light;
@@ -64,4 +67,5 @@ body {
 }
 .site-footer {
   background-color: $cob-nightshade;
+  background-image: none;
 }

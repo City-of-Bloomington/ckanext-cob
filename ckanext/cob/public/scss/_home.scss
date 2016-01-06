@@ -23,6 +23,7 @@
 }
 .homepage {
     .module-search {
+      margin: 2rem 0;
         .module-content {
             background-color: $cob-blue;
             .heading {
@@ -35,6 +36,11 @@
                 color: #fff;
             }
         }
+    }
+    .hero {
+      .module-search {
+        margin: 2rem 2rem 0;
+      }
     }
     @media screen and (min-width: 768px) {
       [role="main"] {
@@ -93,13 +99,21 @@
   }
 }
 .span12 .odb-featured {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 400px) {
     &-link {
       float: left;
       padding: 1rem 1rem;
+      width: 50%;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    &-link {
       width: 25%;
     }
   }
+}
+.odb-main-search {
+  background-color: $cob-cornflower-darkest;
 }
 .odb-main-dark {
   background-color: $cob-gray-dark;
