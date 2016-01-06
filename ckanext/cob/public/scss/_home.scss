@@ -32,6 +32,7 @@
       background-position: 50% 50%;
       background-repeat: no-repeat;
       background-size: cover;
+      border-bottom: 1px solid $cob-nightshade;
       content: '';
       display: block;
       height: 10rem;
@@ -60,7 +61,16 @@
   }
   &-title {
     background: #fff;
+    color: $cob-blue;
+    font-family: $font-headings;
+    font-size: (16rem/16);
+    font-weight: 500;
+    line-height: 1.25em;
+    padding: .125rem 0 .125rem .125rem;
+    text-transform: uppercase;
   }
+}
+.span12 .odb-featured {
   @media screen and (min-width: 768px) {
     &-link {
       float: left;
