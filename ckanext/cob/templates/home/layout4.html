@@ -7,21 +7,10 @@
     </div>
     <div class="row">
       <div class="span6 col1 text-center">
-        <p>We're opening the doors of City Hall. Let us know what information you'd like to see here.</p>
+        <p>We're opening the doors of City Hall. We'd like to know what information you'd like to see here. Please let us know!</p>
       </div>
       <div class="span6 col2 text-center">
         <a href="https://docs.google.com/a/bloomington.in.gov/forms/d/1hovzNIwkegke9LH7rOMsm4dcbRpf1CyHgD4ev8bUN4Y/viewform" class="fn1-btn-featuredAction">Suggest a dataset</a>
-      </div>
-    </div>
-  </div>
-</div>
-<div role="main" class="odb-main-search-3">
-  <div class="container">
-    <div class="row row1">
-      <div class="span12 col1">
-        {% block search %}
-          {% snippet 'home/snippets/search.html' %}
-        {% endblock %}
       </div>
     </div>
   </div>
@@ -64,6 +53,17 @@
                 {% endfor -%}
             </div>
           </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div role="main" class="odb-main-search">
+  <div class="container">
+    <div class="row row1">
+      <div class="span12 col1">
+        {% block search %}
+          {% snippet 'home/snippets/search.html' %}
+        {% endblock %}
       </div>
     </div>
   </div>

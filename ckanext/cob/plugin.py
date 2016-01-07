@@ -5,6 +5,11 @@ def groups():
     # Return a list of groups
     return toolkit.get_action('group_list')(data_dict={'all_fields': True})
 
+def dataset_count():
+    # Return a count of all datasets
+    result = toolkit.get_action('package_search')(data_dict={'rows': 1})
+    return result['count']
+
 class CobPlugin(plugins.SingletonPlugin):
     plugins.implements(plugins.IConfigurer)
     plugins.implements(plugins.ITemplateHelpers)
@@ -18,4 +23,5 @@ class CobPlugin(plugins.SingletonPlugin):
 
     def get_helpers(self):
         # Register cob_theme_* helper functions
-        return {'cob_theme_groups': groups}
+        return {'cob_theme_groups': groups,
+            'cob_theme_dataset_count': dataset_count}
