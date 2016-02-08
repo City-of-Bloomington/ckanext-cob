@@ -3,5 +3,5 @@
     {{ super() }}
     <link rel="stylesheet" href="//bloomington.in.gov/static/fn1-releases/dev/css/default.css">
     <link rel="stylesheet" href="//bloomington.in.gov/static/fn1-releases/dev/css/info.css">
-    <link rel="stylesheet" href="/data/css/main.css">
+    <link rel="stylesheet" href="{{ h.url_for_static('css/main.css') }}">
 {% endblock -%}
