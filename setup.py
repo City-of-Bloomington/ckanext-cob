@@ -16,7 +16,7 @@ setup(
     # http://packaging.python.org/en/latest/tutorial.html#version
     version='0.0.1',
 
-    description='''City of Bloomington Theme[D[D[D[D[D''',
+    description='''City of Bloomington Theme''',
     long_description=long_description,
 
     # The project's main homepage.
@@ -24,7 +24,7 @@ setup(
 
     # Author details
     author='''City of Bloomington''',
-    author_email='''webmaster@bloomington.in.gov''',
+    author_email='''dev@bloomington.in.gov''',
 
     # Choose your license
     license='AGPL',
@@ -48,7 +48,7 @@ setup(
 
 
     # What does your project relate to?
-    keywords='''CKAN Municipal Citykan''',
+    keywords='''CKAN Municipal City''',
 
     # You can just specify the packages manually here if your project is
     # simple. Or you can use find_packages().
