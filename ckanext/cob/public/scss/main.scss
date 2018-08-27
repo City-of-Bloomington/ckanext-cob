@@ -84,6 +84,26 @@ header {
     padding: 15px 0;
     background: #315da6;
 
+    nav {
+      display: inline-block;
+      float: right;
+    }
+
+    .nav-collapse {
+      display: block;
+    }
+
+    .navbar-toggle {
+      background-color: #143a7a;
+      border: 1px solid #06204b;
+      padding: 5px 10px;
+      margin: 0;
+
+      span {
+        color: white;
+      }
+    }
+
     #nav-toggle {
       float: right;
       display: inline-block !important;
@@ -272,14 +292,15 @@ header {
       .container {
         display: flex;
         justify-content: space-evenly;
+        flex-wrap: wrap;
         margin: 0 auto;
-        padding: 150px 0 0 0;
+        padding: 0;
 
         a {
           position: relative;
           background: white;
           width: 200px;
-          padding: 10px;
+          padding: 0;
           text-decoration: none;
           font-family: Lato,"Helvetica Neue",Arial,sans-serif;
           font-size: 14px;
@@ -288,47 +309,23 @@ header {
           text-transform: uppercase;
           text-align: center;
           color: #315da6;
-          border-top: 2px solid #315da6;
+
 
           &:hover {
             background: #315da6;
             color: white;
           }
 
-          &:before {
-            position: absolute;
-            content: '';
-            top: -152px;
-            right: 0;
+          img {
             width: 200px;
             height: 150px;
-            background-position: 50% 50%;
-            background-repeat: no-repeat;
-            background-size: cover;
           }
 
-          &:nth-of-type(1) {
-            &:before {
-              background-image: url(../img/buses.jpg);
-            }
-          }
-
-          &:nth-of-type(2) {
-            &:before {
-              background-image: url(../img/budget.jpg);
-            }
-          }
-
-          &:nth-of-type(3) {
-            &:before {
-              background-image: url(../img/energy-dashboard.jpg);
-            }
-          }
-
-          &:nth-of-type(4) {
-            &:before {
-              background-image: url(../img/crime.jpg);
-            }
+          span {
+            display: block;
+            padding: 10px 0;
+            width: 100%;
+            border-top: 2px solid #315da6;
           }
         }
       }
@@ -408,4 +405,349 @@ header {
 .site-footer {
   background-color: #2a2e32;
   background-image: none;
+}
+
+.lang-select {
+  display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px) {
+
+  header {
+    &:nth-of-type(3) {
+      form {
+        display: none;
+      }
+
+      .nav-collapse {
+        display: none;
+
+        &.in {
+          display: block !important;
+        }
+      }
+
+      nav {
+        position: relative;
+        margin: 35px 0 0 0;
+        z-index: 1;
+        float: none;
+        display: block;
+
+        ul {
+          width: 100%;
+
+          li {
+            border-bottom: 1px solid rgba(225,225,225,0.6);
+            width: 100%;
+            margin: 0;
+            padding: 10px 0;
+
+            &:first-of-type {
+              padding: 0 0 10px 0;
+            }
+
+            &:last-of-type {
+              border-bottom: none;
+              padding: 10px 0 0 0;
+            }
+
+            a {
+              display: block;
+              width: 100%;
+              margin: 0;
+              padding: 0;
+
+              &:hover {
+                background: transparent;
+                margin: 0;
+                padding: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .homepage {
+
+    h1 {
+      font-size: 28px;
+      line-height: 40px;
+    }
+
+    h2 {
+      font-size: 22px;
+    }
+
+    .row {
+      &:nth-of-type(2) {
+        .container {
+          margin: 20px auto;
+          padding: 20px;
+          width: calc(100% - 40px);
+
+          h3 {
+            margin: 0 0 10px 0;
+          }
+
+          form {
+            width: 100%;
+            margin: 0 0 40px 0;
+          }
+
+          > div {
+            width: 100%;
+
+            &:first-of-type {
+              padding: 0;
+            }
+          }
+        }
+      }
+
+      &:nth-of-type(3) {
+        .container {
+          display: block;
+
+          &:before {
+            display: none;
+          }
+
+          a {
+            display: block;
+            margin: 0 auto 40px auto;
+
+            &:last-of-type {
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+
+      &:nth-of-type(4) {
+        padding: 40px 20px;
+
+        .container {
+          a {
+            flex: 1 0 40%;
+          }
+        }
+      }
+    }
+  }
+
+  .lang-container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 678px) {
+  header {
+    &:nth-of-type(3) {
+      form {
+        display: none;
+      }
+
+      .nav-collapse {
+        display: none;
+
+        &.in {
+          display: block !important;
+        }
+      }
+
+      nav {
+        position: relative;
+        margin: 35px 0 0 0;
+        z-index: 1;
+        float: none;
+        display: block;
+
+        ul {
+          width: 100%;
+
+          li {
+            border-bottom: 1px solid rgba(225,225,225,0.6);
+            width: 100%;
+            margin: 0;
+            padding: 10px 0;
+
+            &:first-of-type {
+              padding: 0 0 10px 0;
+            }
+
+            &:last-of-type {
+              border-bottom: none;
+              padding: 10px 0 0 0;
+            }
+
+            a {
+              display: block;
+              width: 100%;
+              margin: 0;
+              padding: 0;
+
+              &:hover {
+                background: transparent;
+                margin: 0;
+                padding: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .homepage {
+
+    h1 {
+      font-size: 28px;
+      line-height: 40px;
+    }
+
+    h2 {
+      font-size: 22px;
+    }
+
+    .row {
+      &:nth-of-type(2) {
+        .container {
+          margin: 20px auto;
+          padding: 20px;
+          width: calc(100% - 40px);
+
+          h3 {
+            margin: 0 0 10px 0;
+          }
+
+          form {
+            width: 100%;
+            margin: 0 0 40px 0;
+          }
+
+          > div {
+            width: 100%;
+
+            &:first-of-type {
+              padding: 0;
+            }
+          }
+        }
+      }
+
+      &:nth-of-type(3) {
+        .container {
+          // display: block;
+          padding: 0 20px;
+
+          &:before {
+            display: none;
+          }
+
+          a {
+            // display: inline-block;
+            margin: 0 auto 40px auto;
+
+            &:nth-of-type(2),
+            &:nth-of-type(4) {
+              // float: right;
+            }
+
+            &:nth-of-type(3),
+            &:last-of-type {
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+
+      &:nth-of-type(4) {
+        padding: 40px 20px;
+
+        .container {
+          a {
+            flex: 1 0 30%;
+          }
+        }
+      }
+    }
+  }
+
+  .lang-container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 679px) and (max-width: 990px) {
+  header {
+    &:nth-of-type(3) {
+      form {
+        display: none;
+      }
+    }
+  }
+
+  .homepage {
+    .row {
+      &:nth-of-type(2) {
+        .container {
+          margin: 20px auto;
+          padding: 20px;
+          width: calc(100% - 40px);
+
+          h3 {
+            margin: 0 0 10px 0;
+          }
+
+          form {
+            width: 100%;
+            margin: 0 0 40px 0;
+          }
+
+          > div {
+            width: 100%;
+
+            &:first-of-type {
+              padding: 0;
+            }
+          }
+        }
+      }
+
+      &:nth-of-type(3) {
+        .container {
+          padding: 0 20px;
+
+          &:before {
+            display: none;
+          }
+
+          a {
+            margin: 0 auto 40px auto;
+
+            &:last-of-type {
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+
+      &:nth-of-type(4) {
+        padding: 40px 20px;
+
+        .container {
+          a {
+            flex: 1 0 20%;
+          }
+        }
+      }
+    }
+  }
+
+  .lang-container {
+    display: none;
+  }
 }
