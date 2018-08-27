@@ -1,26 +1,26 @@
 {% block header_wrapper %}
 {% block header_account %}
-  <header>
-    <div class="container">
-      <a href="https://bloomington.in.gov"
-         title="City of Bloomington Home"
-         rel="home">
-        <img
-          src="https://bloomington.in.gov/static/fn1-releases/0.2/info/img/bloomington-logo.svg"
-          alt="City of Bloomington, Indiana" />
-      </a>
+<header>
+  <div class="container">
+    <a href="https://bloomington.in.gov"
+       title="City of Bloomington Home"
+       rel="home">
+      <img
+        src="https://bloomington.in.gov/static/fn1-releases/0.2/info/img/bloomington-logo.svg"
+        alt="City of Bloomington, Indiana" />
+    </a>
 
-      {% block header_logo %}
-        <a href="{{ h.url('home.index') }}"
-           title="B Clear Open Data">
-          <img
-            src="{{ h.url_for_static_or_external('img/b-clear.svg') }}"
-            alt="{{ g.site_title }}"
-            title="{{ g.site_title }}" />
-        </a>
-      {% endblock %}
-    </div>
-  </header>
+    {% block header_logo %}
+      <a href="{{ h.url('home.index') }}"
+         title="B Clear Open Data">
+        <img
+          src="{{ h.url_for_static_or_external('img/b-clear.svg') }}"
+          alt="{{ g.site_title }}"
+          title="{{ g.site_title }}" />
+      </a>
+    {% endblock %}
+  </div>
+</header>
 
 <header>
   <div class="container">
