@@ -1,7 +1,411 @@
 @import '_variables';
 
-@import '_bootstrap-overrides';
-@import '_header-footer';
-@import '_home';
-@import '_tag';
-@import '_topic';
+// @import '_bootstrap-overrides';
+// @import '_header-footer';
+// @import '_home';
+// @import '_tag';
+// @import '_topic';
+
+@mixin visuallyHidden() {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+@mixin clearfix {
+  &:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+.container {
+  max-width: 940px;
+}
+
+header {
+
+  ul {
+    list-style: none;
+    list-style-type: none;
+  }
+
+  // the top-most header
+  &:first-of-type {
+    border-top: 8px solid #315da6;
+    background-color: white;
+    padding: 5px 0;
+
+    a {
+
+      // b-clear data logo
+      &:nth-of-type(2) {
+        border-left: 1px solid #bcc9d8;
+        padding: 0 0 0 20px;
+        margin: 0 0 0 10px;
+      }
+    }
+  }
+
+  // the middle header
+  &:nth-of-type(2) {
+    background: #143a7a;
+
+    ul {
+      li {
+        a {
+          border-left: 1px solid #00232e;
+          display: block;
+          color: #bfd7de;
+          font-size: 13px;
+          font-weight: bold;
+          padding: 0 10px;
+          line-height: 31px;
+          float: right;
+
+          &:hover,
+          &:focus,
+          &.active {
+            background: darken(#143a7a, 5%);
+          }
+        }
+      }
+    }
+  }
+
+  // the bottom-most header
+  &:nth-of-type(3) {
+    padding: 15px 0;
+    background: #315da6;
+
+    #nav-toggle {
+      float: right;
+      display: inline-block !important;
+      padding: 0 !important;
+    }
+
+    ul {
+      display: inline-block;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        margin: 0 0 0 10px;
+
+        &:first-of-type {
+          margin: 0;
+        }
+
+        a {
+          border-radius: 4px;
+          transition: background-color .25s ease-in-out;
+          padding: 10px 15px;
+          color: white;
+          text-decoration: none;
+
+          &:hover {
+            background-color: #4975ba;
+          }
+        }
+      }
+    }
+
+    form {
+      position: relative;
+      display: inline-block;
+      margin: 0 0 0 10px;
+
+      label {
+        @include visuallyHidden;
+      }
+
+      input {
+        position: relative;
+        width: 200px;
+        height: 25px;
+      }
+
+      button {
+        position: absolute;
+        display: block;
+        height: 17px;
+        width: 17px;
+        padding: 0;
+        top: 50%;
+        right: 10px;
+        margin-top: -10px;
+        background-color: transparent;
+        border: none;
+        color: #999;
+        transition: color 0.2s ease-in;
+      }
+    }
+  }
+}
+
+.homepage {
+  background: #d7e5f4;
+  font-family: Lato, "Helvetica Neue", Arial, sans-serif;
+
+  h1 {
+    text-align: center;
+    font-size: 35px;
+    line-height: 35px;
+    font-weight: 300;
+    color: white;
+    margin: 0 0 30px 0;
+    padding: 0;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 300;
+    color: white;
+    margin: 0 0 30px 0;
+    padding: 0;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 300;
+    color: white;
+    margin: 0 0 30px 0;
+    padding: 0;
+  }
+
+  p {
+    font-size: 16px;
+    margin: 0 0 15px 0;
+  }
+
+  .row {
+    margin: 0;
+
+    &:nth-of-type(2) {
+      .container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        background: rgba(0,0,0,0.6);
+        margin: 40px auto;
+        padding: 40px 50px;
+
+        form {
+          position: relative;
+          width: 330px;
+
+          input {
+            padding: 25px 20px;
+            font-size: 20px;
+            line-height: 20px;
+          }
+
+          button {
+            position: absolute;
+            display: block;
+            height: 30px;
+            width: 30px;
+            padding: 0;
+            top: 50%;
+            right: 10px;
+            margin-top: -15px;
+            background-color: transparent;
+            border: none;
+            color: #999;
+            transition: color 0.2s ease-in;
+
+            i {
+              font-size: 30px;
+            }
+          }
+        }
+
+        p {
+          text-align: center;
+          color: white;
+        }
+
+        > div {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          &:first-of-type {
+            padding: 0 20px 0 0;
+          }
+
+          &:last-of-type {
+            padding: 0 0 0 20px;
+
+            a {
+              font-family: 'PT Sans', 'Helvetica Neue', Arial, sans-serif;
+              padding: 10px 20px;
+              background-color: #20ac59;
+              border-bottom: 4px solid #83b685;
+              border-radius: 4px;
+              text-decoration: none;
+              font-size: 22px;
+              line-height: 22px;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+
+    &:nth-of-type(3) {
+      padding: 40px 0 0 0;
+      background: #eeeeee;
+
+      .container {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        padding: 150px 0 0 0;
+
+        a {
+          position: relative;
+          background: white;
+          width: 200px;
+          padding: 10px;
+          text-decoration: none;
+          font-family: Lato,"Helvetica Neue",Arial,sans-serif;
+          font-size: 14px;
+          line-height: 14px;
+          font-weight: 500;
+          text-transform: uppercase;
+          text-align: center;
+          color: #315da6;
+          border-top: 2px solid #315da6;
+
+          &:hover {
+            background: #315da6;
+            color: white;
+          }
+
+          &:before {
+            position: absolute;
+            content: '';
+            top: -152px;
+            right: 0;
+            width: 200px;
+            height: 150px;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+
+          &:nth-of-type(1) {
+            &:before {
+              background-image: url(../img/buses.jpg);
+            }
+          }
+
+          &:nth-of-type(2) {
+            &:before {
+              background-image: url(../img/budget.jpg);
+            }
+          }
+
+          &:nth-of-type(3) {
+            &:before {
+              background-image: url(../img/energy-dashboard.jpg);
+            }
+          }
+
+          &:nth-of-type(4) {
+            &:before {
+              background-image: url(../img/crime.jpg);
+            }
+          }
+        }
+      }
+    }
+
+    &:nth-of-type(4) {
+      padding: 40px 0;
+      background: #eeeeee;
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #FFF;
+        border: 1px solid #cccccc;
+        border-radius: 4px;
+        box-shadow: 0 0 0 4px rgba(0,0,0,0.05);
+        padding: 20px;
+        margin: 0 auto;
+
+        h2 {
+          width: 100%;
+          text-align: left;
+          color: #777;
+        }
+
+        a {
+          flex: 1 0 13%;
+          margin: 5px;
+          height: 100px;
+
+          &:hover {
+            span {
+              color: #0d4252;
+            }
+          }
+
+          img {
+            display: block;
+            margin: 0 auto 10px auto;
+          }
+
+          span {
+            color: #1e59ae;
+            text-align: center;
+            display: block;
+          }
+        }
+      }
+    }
+
+    &:nth-of-type(5) {
+      background: #8d98a5;
+      padding: 40px 0;
+
+      .container {
+
+        a {
+          font-family: 'PT Sans', 'Helvetica Neue', Arial, sans-serif;
+          display: block;
+          margin: 0 auto;
+          padding: 10px 20px;
+          width: 300px;
+          background-color: #20ac59;
+          border-bottom: 4px solid #83b685;
+          border-radius: 4px;
+          text-decoration: none;
+          text-align: center;
+          font-size: 22px;
+          line-height: 22px;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.site-footer {
+  background-color: #2a2e32;
+  background-image: none;
+}
