@@ -1,11 +1,16 @@
-// @import '_variables';
+// Vars
+$shark:               #2A2E32;
+$azure:               #315da6;
+$biscay:              #183365;
+$cob-blue:            #1e59ae;
+$silver-chalice:      #9e9e9e;
+$water:               #d7e5f4;
+$fern:                #4caf50;
+$spring-rain:         #a1cca5;
+$gallery:             #eeeeee;
+$gothic:              #607d8b;
 
-// @import '_bootstrap-overrides';
-// @import '_header-footer';
-// @import '_home';
-// @import '_tag';
-// @import '_topic';
-
+// Helpers
 @mixin visuallyHidden() {
   border: 0;
   clip: rect(0 0 0 0);
@@ -17,24 +22,28 @@
   width: 1px;
 }
 
-@mixin clearfix {
-  &:after {
-    clear: both;
-    content: '';
-    display: table;
+// Global
+body {
+  font-family: Lato, "Helvetica Neue", Arial, sans-serif;
+  background: $shark;
+
+  .container {
+    width: calc(100% - 40px);
+    max-width: 940px;
+    padding: 0;
+  }
+
+  .site-footer {
+    background-color: $shark;
+    background-image: none;
+
+    .lang-select {
+      display: none;
+    }
   }
 }
 
-body {
-  background: #2a2e32;
-}
-
-.container {
-  width: calc(100% - 40px);
-  max-width: 940px;
-  padding: 0;
-}
-
+// Header
 header {
 
   ul {
@@ -44,15 +53,14 @@ header {
 
   // the top-most header
   &:first-of-type {
-    border-top: 8px solid #315da6;
+    border-top: 8px solid $azure;
     background-color: white;
     padding: 5px 0;
 
     a {
-
       // b-clear data logo
       &:nth-of-type(2) {
-        border-left: 1px solid #bcc9d8;
+        border-left: 1px solid gainsboro;
         padding: 0 0 0 20px;
         margin: 0 0 0 10px;
       }
@@ -61,14 +69,14 @@ header {
 
   // the middle header
   &:nth-of-type(2) {
-    background: #143a7a;
+    background: lighten($biscay, 5%);
 
     ul {
       li {
         a {
-          border-left: 1px solid #00232e;
+          border-left: 1px solid darken($biscay, 15%);
           display: block;
-          color: #bfd7de;
+          color: white;
           font-size: 13px;
           font-weight: bold;
           padding: 0 10px;
@@ -78,7 +86,7 @@ header {
           &:hover,
           &:focus,
           &.active {
-            background: darken(#143a7a, 5%);
+            background: darken($biscay, 5%);
           }
         }
       }
@@ -88,7 +96,7 @@ header {
   // the bottom-most header
   &:nth-of-type(3) {
     padding: 15px 0;
-    background: #315da6;
+    background: $azure;
 
     nav {
       display: inline-block;
@@ -100,8 +108,8 @@ header {
     }
 
     .navbar-toggle {
-      background-color: #143a7a;
-      border: 1px solid #06204b;
+      background-color: lighten($biscay, 5%);
+      border: 1px solid darken($biscay, 5%);
       padding: 5px 10px;
       margin: 0;
 
@@ -137,7 +145,7 @@ header {
           text-decoration: none;
 
           &:hover {
-            background-color: #4975ba;
+            background-color: lighten($azure, 10%);
           }
         }
       }
@@ -161,24 +169,24 @@ header {
       button {
         position: absolute;
         display: block;
+        background-color: transparent;
+        border: none;
+        color: $silver-chalice;
+        transition: color 0.2s ease-in;
         height: 17px;
         width: 17px;
-        padding: 0;
         top: 50%;
         right: 10px;
         margin-top: -10px;
-        background-color: transparent;
-        border: none;
-        color: #999;
-        transition: color 0.2s ease-in;
       }
     }
   }
 }
 
+// Homepage
+// via '/templates/home/layout2.html'
 .homepage {
-  background: #d7e5f4;
-  font-family: Lato, "Helvetica Neue", Arial, sans-serif;
+  background: $water;
 
   h1 {
     text-align: center;
@@ -238,18 +246,11 @@ header {
           }
 
           button {
-            position: absolute;
-            display: block;
             height: 30px;
             width: 30px;
-            padding: 0;
             top: 50%;
             right: 10px;
             margin-top: -15px;
-            background-color: transparent;
-            border: none;
-            color: #999;
-            transition: color 0.2s ease-in;
 
             i {
               font-size: 30px;
@@ -270,6 +271,22 @@ header {
 
           &:first-of-type {
             padding: 0 20px 0 0;
+
+            form {
+              button {
+                position: absolute;
+                display: block;
+                background-color: transparent;
+                border: none;
+                color: $silver-chalice;
+                transition: color 0.2s ease-in;
+                height: 17px;
+                width: 17px;
+                top: 50%;
+                right: 30px;
+                margin-top: -17px;
+              }
+            }
           }
 
           &:last-of-type {
@@ -278,13 +295,13 @@ header {
             a {
               font-family: 'PT Sans', 'Helvetica Neue', Arial, sans-serif;
               padding: 10px 20px;
-              background-color: #20ac59;
-              border-bottom: 4px solid #83b685;
+              background-color: $fern;
+              border-bottom: 4px solid $spring-rain;
               border-radius: 4px;
               text-decoration: none;
               font-size: 22px;
               line-height: 22px;
-              color: #fff;
+              color: white;
             }
           }
         }
@@ -293,7 +310,7 @@ header {
 
     &:nth-of-type(3) {
       padding: 40px 0 0 0;
-      background: #eeeeee;
+      background: $gallery;
 
       .container {
         display: flex;
@@ -314,11 +331,11 @@ header {
           font-weight: 500;
           text-transform: uppercase;
           text-align: center;
-          color: #315da6;
+          color: $azure;
 
 
           &:hover {
-            background: #315da6;
+            background: $azure;
             color: white;
           }
 
@@ -331,7 +348,7 @@ header {
             display: block;
             padding: 10px 0;
             width: 100%;
-            border-top: 2px solid #315da6;
+            border-top: 2px solid $azure;
           }
         }
       }
@@ -339,13 +356,13 @@ header {
 
     &:nth-of-type(4) {
       padding: 40px 0;
-      background: #eeeeee;
+      background: $gallery;
 
       .container {
         display: flex;
         flex-wrap: wrap;
-        background-color: #FFF;
-        border: 1px solid #cccccc;
+        background-color: white;
+        border: 1px solid darken($gallery, 5%);
         border-radius: 4px;
         box-shadow: 0 0 0 4px rgba(0,0,0,0.05);
         padding: 20px;
@@ -354,7 +371,7 @@ header {
         h2 {
           width: 100%;
           text-align: left;
-          color: #777;
+          color: darken($silver-chalice, 5%);
         }
 
         a {
@@ -364,7 +381,7 @@ header {
 
           &:hover {
             span {
-              color: #0d4252;
+              color: darken($cob-blue, 15%);
             }
           }
 
@@ -374,7 +391,7 @@ header {
           }
 
           span {
-            color: #1e59ae;
+            color: $cob-blue;
             text-align: center;
             display: block;
           }
@@ -383,7 +400,7 @@ header {
     }
 
     &:nth-of-type(5) {
-      background: #8d98a5;
+      background: $gothic;
       padding: 40px 0;
 
       .container {
@@ -394,31 +411,22 @@ header {
           margin: 0 auto;
           padding: 10px 20px;
           width: 300px;
-          background-color: #20ac59;
-          border-bottom: 4px solid #83b685;
+          background-color: $fern;
+          border-bottom: 4px solid $spring-rain;;
           border-radius: 4px;
           text-decoration: none;
           text-align: center;
           font-size: 22px;
           line-height: 22px;
-          color: #fff;
+          color: white;
         }
       }
     }
   }
 }
 
-.site-footer {
-  background-color: #2a2e32;
-  background-image: none;
-}
-
-.lang-select {
-  display: none;
-}
-
+// Responsive
 @media screen and (min-width: 320px) and (max-width: 479px) {
-
   header {
     &:nth-of-type(3) {
       form {
@@ -694,12 +702,6 @@ header {
         display: none;
       }
     }
-
-    &:nth-of-type(3) {
-      form {
-        // display: none;
-      }
-    }
   }
 
   .homepage {
@@ -757,9 +759,5 @@ header {
         }
       }
     }
-  }
-
-  .lang-container {
-    display: none;
   }
 }
