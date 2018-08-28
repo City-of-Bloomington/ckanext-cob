@@ -1,4 +1,4 @@
-@import '_variables';
+// @import '_variables';
 
 // @import '_bootstrap-overrides';
 // @import '_header-footer';
@@ -23,6 +23,10 @@
     content: '';
     display: table;
   }
+}
+
+body {
+  background: #2a2e32;
 }
 
 .container {
