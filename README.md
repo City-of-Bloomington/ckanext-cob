@@ -1,12 +1,8 @@
-=============
-ckanext-cob
-=============
+# ckanext-cob #
 
 This is the CKAN theme for the City of Bloomington, Indiana.
 
-------------
-Installation
-------------
+## Installation ##
 CKAN will only run in development mode.  There is no mechanism for fixed production deployments.  Once you've installed it, make sure to add it to the CKAN configuration's list of enabled plugins.
 
 ### Install from Github
