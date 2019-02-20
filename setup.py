@@ -5,26 +5,26 @@ from os import path
 here = path.abspath(path.dirname(__file__))
 
 # Get the long description from the relevant file
-with open(path.join(here, 'README.rst'), encoding='utf-8') as f:
+with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(
-    name='''ckanext-cob''',
+    name='ckanext-cob',
 
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # http://packaging.python.org/en/latest/tutorial.html#version
-    version='0.0.1',
+    version='0.1.0',
 
-    description='''City of Bloomington Theme''',
+    description='City of Bloomington Theme',
     long_description=long_description,
 
     # The project's main homepage.
     url='https://github.com/City-of-Bloomington/ckanext-cob',
 
     # Author details
-    author='''City of Bloomington''',
-    author_email='''dev@bloomington.in.gov''',
+    author='City of Bloomington',
+    author_email='dev@bloomington.in.gov',
 
     # Choose your license
     license='AGPL',
@@ -35,24 +35,23 @@ setup(
         # 3 - Alpha
         # 4 - Beta
         # 5 - Production/Stable
-        'Development Status :: 4 - Beta',
+        'Development Status :: 5 - Production/Stable',
 
         # Pick your license as you wish (should match "license" above)
         'License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)',
 
         # Specify the Python versions you support here. In particular, ensure
         # that you indicate whether you support Python 2, Python 3 or both.
-        'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
     ],
 
 
     # What does your project relate to?
-    keywords='''CKAN Municipal City''',
+    keywords='CKAN Municipal City',
 
     # You can just specify the packages manually here if your project is
     # simple. Or you can use find_packages().
-    packages=find_packages(exclude=['contrib', 'docs', 'tests*']),
+    packages=find_packages(),
 
     # List run-time dependencies here.  These will be installed by pip when your
     # project is installed. For an analysis of "install_requires" vs pip's
@@ -63,7 +62,7 @@ setup(
     # If there are data files included in your packages that need to be
     # installed, specify them here.  If using Python 2.6 or less, then these
     # have to be included in MANIFEST.in as well.
-    include_package_data=True,
+    include_package_data=False,
     package_data={
     },
 
