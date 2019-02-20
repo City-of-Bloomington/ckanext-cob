@@ -8,4 +8,4 @@ ifndef SASS
 endif
 
 compile: deps
-	cd ckanext/cob/public/css && sassc -mt compact main.scss main.css
+	cd ckanext/cob/public/css && sassc -mt compact screen.scss screen.css
