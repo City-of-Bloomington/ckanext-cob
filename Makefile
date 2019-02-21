@@ -16,3 +16,4 @@ compile: deps
 package:
 	if [ ! -d build ]; then mkdir build; fi
 	rsync -rl --exclude-from=buildignore . ./build/ckanext-cob/
+	cd build && tar czf ckanext-cob.tar.gz
