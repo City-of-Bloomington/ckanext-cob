@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row" id="search-row">
   <div class="container">
     <h1>Your source for open data in Bloomington, Indiana</h1>
 
@@ -15,7 +15,7 @@
   </div>
 </div>
 
-<div class="row">
+<div class="row" id="externallinks-row">
   <div class="container">
     <a href="https://bloomington.doublemap.com/map/">
       <img src="{{ h.url_for_static('img/buses.jpg') }}">
@@ -25,9 +25,9 @@
       <img src="{{ h.url_for_static('img/budget.jpg') }}">
       <span>City Finances</span>
     </a>
-    <a href="http://buildingdashboard.net/bloomington">
-      <img src="{{ h.url_for_static('img/energy-dashboard.jpg') }}">
-      <span>Energy Dashboard</span>
+    <a href="http://kiosk.datareadings.com/jZGXKiS1/overview">
+      <img src="{{ h.url_for_static('img/kiosk.png') }}">
+      <span>Solar Monitor</span>
     </a>
     <a href="http://raidsonline.com/?address=Bloomington,IN">
       <img src="{{ h.url_for_static('img/crime.jpg') }}">
@@ -36,7 +36,7 @@
   </div>
 </div>
 
-<div class="row">
+<div class="row" id="topics-row">
   <div class="container">
     <h2>Browse by Topic</h2>
     {%- for topic in h.cob_theme_groups() %}
@@ -49,7 +49,7 @@
 </div>
 
 
-<div class="row">
+<div class="row" id="suggest-row">
   <div class="container">
     <h2>Don't see what you're looking for?</h2>
     <a href="https://docs.google.com/a/bloomington.in.gov/forms/d/1hovzNIwkegke9LH7rOMsm4dcbRpf1CyHgD4ev8bUN4Y/viewform">Suggest a dataset</a>
