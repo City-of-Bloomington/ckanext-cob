@@ -86,11 +86,11 @@ header:nth-of-type(3) form button { position: absolute; display: block; backgrou
 
 .homepage .row:nth-of-type(3) .container { display: flex; justify-content: space-evenly; flex-wrap: wrap; margin: 0 auto; padding: 0; }
 
-.homepage .row:nth-of-type(3) .container a { position: relative; background: white; width: 200px; padding: 0; text-decoration: none; font-family: Lato,"Helvetica Neue",Arial,sans-serif; font-size: 14px; line-height: 14px; font-weight: 500; text-transform: uppercase; text-align: center; color: #315da6; }
+.homepage .row:nth-of-type(3) .container a { position: relative; background: white; width: 170px; padding: 0; text-decoration: none; font-family: Lato,"Helvetica Neue",Arial,sans-serif; font-size: 14px; line-height: 14px; font-weight: 500; text-transform: uppercase; text-align: center; color: #315da6; }
 
 .homepage .row:nth-of-type(3) .container a:hover { background: #315da6; color: white; }
 
-.homepage .row:nth-of-type(3) .container a img { width: 200px; height: 150px; }
+.homepage .row:nth-of-type(3) .container a img { width: 170px; height: 127px; }
 
 .homepage .row:nth-of-type(3) .container a span { display: block; padding: 10px 0; width: 100%; border-top: 2px solid #315da6; }
 
